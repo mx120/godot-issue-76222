@@ -1,0 +1,28 @@
+2a60927148abd1d33b818b535e306557
+::res://::1681998483
+bullet.gd::GDScript::-1::1681929420::0::1::::<>CharacterBody2D<>::
+bullet.tscn::PackedScene::8044014985749255524::1681930952::0::1::::<><>::res://bullet.gd<>uid://fci501mx3tkh
+default_env.tres::Environment::5177545614586706018::1681932501::0::1::::<><>::
+enemy.gd::GDScript::-1::1681930055::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::6131382647564937410::1681932501::0::1::::<><>::uid://b2uxchq8n7yph<>res://enemy.gd<>uid://cjmitqmr3xtgf
+icon.png::CompressedTexture2D::4405274329168400645::1677466225::1678068344::1::::<><>::
+Main.tscn::PackedScene::8066293047244182627::1681930951::0::1::::<><>::uid://dtxvlt8ejqhpc<>uid://cexaytp8aq05k
+new_theme.tres::Theme::3475443274529599629::1681088637::0::1::::<><>::
+player.gd::GDScript::-1::1681929265::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::8541626518242947564::1681931183::0::1::::<><>::res://player.gd<>uid://bjtfk001vi8hx<>uid://cjmitqmr3xtgf<>uid://be1wuxk1snqds
+progress_bar.tscn::PackedScene::5429834018925536693::1681930952::0::1::::<><>::uid://bprsbpwu36brp
+projectile1.gd::GDScript::-1::1679255740::0::1::::<>RefCounted<>::
+projectile2.gd::GDScript::-1::1679255740::0::1::::<>Node2D<>::
+sword.gd::GDScript::-1::1679248500::0::1::::<>Node2D<>::
+::res://textures/::1681998376
+61198a15306b6fe-removebg-preview.png::CompressedTexture2D::8304183948928357980::1679254418::1679254451::1::::<><>::
+CapsuleForMatias.png::CompressedTexture2D::6659035985599620334::1677551136::1678068344::1::::<><>::
+CircleForMatias.png::CompressedTexture2D::2598569897138179738::1676832043::1678068344::1::::<><>::
+fire_particle.png::CompressedTexture2D::355613637283312119::1675354507::1680826945::1::::<><>::
+GnuUnifontFull-Pm9P.ttf::FontFile::7232790124964449520::1681087400::1681087407::1::::<><>::
+Hero 01.png::CompressedTexture2D::3057666249579010457::1678631994::1680827390::1::::<><>::
+New Piskel.png::CompressedTexture2D::2722222594260747008::1681432231::1681432263::1::::<><>::
+SlimeA.png::CompressedTexture2D::4324207473320958421::1680826916::1680826945::1::::<><>::
+Solaria Demo Update 01 (1).png::CompressedTexture2D::5101121311951170762::1681673376::1681673412::1::::<><>::
+stock-vector-crosshair-icons-set-for-computer-games-shooters-or-original-mouse-cursors-pointers-for-computer-247738264-removebg-preview (2).png::CompressedTexture2D::4134705675110347953::1678048167::1680826945::1::::<><>::
+tilesheet_complete.png::CompressedTexture2D::8793729729850965353::1678067191::1680826945::1::::<><>::

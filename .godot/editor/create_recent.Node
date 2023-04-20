@@ -1,0 +1,17 @@
+CollisionShape2D
+CollisionPolygon2D
+Timer
+CPUParticles2D
+ProgressBar
+Marker2D
+PathFollow2D
+Path2D
+AnimatedSprite2D
+CharacterBody2D
+Sprite2D
+VisibleOnScreenNotifier2D
+Node2D
+RigidBody2D
+Area2D
+TileMap
+Camera2D

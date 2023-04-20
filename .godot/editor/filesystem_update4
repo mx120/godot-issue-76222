@@ -1,0 +1,9 @@
+res://default_env.tres
+res://Main.tscn
+res://player.gd
+res://Player.tscn
+res://enemy.tscn
+res://progress_bar.tscn
+res://bullet.tscn
+res://enemy.gd
+res://bullet.gd

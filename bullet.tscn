@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmut0s2ybjsd5"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_r33c1"]
+[ext_resource type="Texture2D" uid="uid://fci501mx3tkh" path="res://textures/fire_particle.png" id="2_wln7x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgk27"]
+size = Vector2(80, 80)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qa462"]
+
+[sub_resource type="Gradient" id="Gradient_kecdq"]
+offsets = PackedFloat32Array(0, 0.628399, 0.86858, 0.971299)
+colors = PackedColorArray(1, 1, 0, 1, 1, 0.423529, 0, 1, 1, 0.103597, 0, 1, 0.425239, 0.383283, 0.320235, 1)
+
+[sub_resource type="Curve" id="Curve_q635q"]
+_data = [Vector2(0.0212465, 1), 0.0, 0.0, 0, 0, Vector2(0.504249, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_0v7h8"]
+offsets = PackedFloat32Array(0, 0.081571, 0.163142, 0.246224)
+colors = PackedColorArray(1, 1, 0, 1, 1, 0.45098, 0.121569, 1, 1, 0, 0, 1, 0.334122, 0.334122, 0.334122, 1)
+
+[node name="bullet" type="CharacterBody2D" groups=["bullet"]]
+z_index = 1
+collision_mask = 32
+motion_mode = 1
+slide_on_ceiling = false
+script = ExtResource("1_r33c1")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.96044e-08, -5.96046e-08)
+rotation = 1.5708
+scale = Vector2(0.05, 0.05)
+shape = SubResource("RectangleShape2D_lgk27")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-1, -1.78814e-07)
+scale = Vector2(0.4, 0.2)
+
+[node name="fireBall" type="CPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_qa462")
+amount = 25
+lifetime = 0.01
+speed_scale = 0.05
+lifetime_randomness = 1.0
+texture = ExtResource("2_wln7x")
+gravity = Vector2(-980, 0)
+scale_amount_min = 0.08
+scale_amount_max = 0.08
+color_ramp = SubResource("Gradient_kecdq")
+
+[node name="explosion" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 25
+lifetime = 0.5
+one_shot = true
+speed_scale = 0.5
+explosiveness = 1.0
+randomness = 1.0
+lifetime_randomness = 1.0
+texture = ExtResource("2_wln7x")
+emission_shape = 1
+emission_sphere_radius = 5.0
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+scale_amount_min = 0.0
+scale_amount_max = 0.1
+scale_amount_curve = SubResource("Curve_q635q")
+color_ramp = SubResource("Gradient_0v7h8")
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
